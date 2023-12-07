@@ -1,0 +1,7 @@
+[submodule "simple-python-pyinstaller-app"]
+	path = simple-python-pyinstaller-app
+	url = git@github.com:labasubagia/simple-python-pyinstaller-app.git
+[submodule "a428-cicd-labs"]
+	path = a428-cicd-labs
+	url = git@github.com:labasubagia/a428-cicd-labs.git
+	branch = react-app

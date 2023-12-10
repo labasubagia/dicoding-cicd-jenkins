@@ -50,6 +50,24 @@ services:
     networks:
       - jenkins
 
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - jenkins
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3030:3030
+    environment:
+      - GF_SERVER_HTTP_PORT=3030
+    networks:
+      - jenkins
+
 networks:
   jenkins:
 

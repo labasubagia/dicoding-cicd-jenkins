@@ -15,7 +15,8 @@ services:
       - jenkins-data:/var/jenkins_home
     ports:
       - 2376:2376
-      - 3000:3000
+      - 3000:3000 # react-app
+      - 8501:8501 # python app
     restart: always
     command: --storage-driver overlay2
 

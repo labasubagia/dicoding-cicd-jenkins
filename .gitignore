@@ -1,0 +1,8 @@
+*.tfvars
+infra/service_account/*
+!infra/service_account/.gitkeep
+**/.terraform
+**/*.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/.terraform.tfstate.lock.info
